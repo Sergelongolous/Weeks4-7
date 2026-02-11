@@ -16,7 +16,7 @@ public class TextAppear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool isHovered = Mouse.current.ReadValueAsObject();
+        bool isHovered = (bool)Mouse.current.ReadValueAsObject();
         if (isHovered)
         {
             birdText.SetActive(true);
