@@ -24,7 +24,7 @@ public class PiratePop : MonoBehaviour
 
         if (isClicked == true)
         {
-            Destroy(spawningPrefab = knives);
+            Destroy(spawningPrefab);
         }
 
         if (isClicked == true)
