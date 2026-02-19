@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class LightButton : MonoBehaviour
 {
     public Camera gameCamera;
-    public GameObject lightButton;
+    //public GameObject lightButton;
     private bool isPressed = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,7 +21,8 @@ public class LightButton : MonoBehaviour
     {
         if (isPressed == true)
         {
-            lightButton.GetComponent<SpriteRenderer>().enabled = true;
+            //lightButton.
+                GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 
@@ -29,7 +30,8 @@ public class LightButton : MonoBehaviour
     {
         if (isPressed == true)
         {
-            Color p = new Color(9, 10, 34, 0);
+            //Color p = new Color(9, 10, 34, 0);
+            GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

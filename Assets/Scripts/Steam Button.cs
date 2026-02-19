@@ -28,6 +28,9 @@ public class SteamButton : MonoBehaviour
 
             SteamButton spawnedsteamObject = steamObject.GetComponent<SteamButton>();
             spawnedsteamObject.transform.position = transform.position;
+       
+
+
 
             Destroy(spawnedsteamObject, destroyDuration);
 
@@ -41,7 +44,8 @@ public class SteamButton : MonoBehaviour
 
         if (clockDuration <= 0)
         {
-            Destroy(gameObject);
+
+            Destroy(steamObject);
         }
     }
 }
