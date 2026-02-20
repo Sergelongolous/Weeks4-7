@@ -6,9 +6,7 @@ using UnityEngine.Rendering.Universal;
 
 public class LightButton : MonoBehaviour
 {
-    public Camera gameCamera;
-    //public GameObject lightButton;
-    private bool isPressed = false;
+    private bool isOn = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,19 +17,15 @@ public class LightButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPressed == true)
-        {
-            //lightButton.
-                GetComponent<SpriteRenderer>().enabled = false;
-        }
+        
     }
 
-    public void ColorChange()
+    public void LightOn()
     {
-        if (isPressed == true)
+        //If statements that makes the destroys the game object entirelly after a single clikc of the UI POWER Button
+        if (isOn == false)
         {
-            //Color p = new Color(9, 10, 34, 0);
-            GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(gameObject, 0.1f);
         }
     }
 }
